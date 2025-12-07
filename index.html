@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VIP PDF MAKER — Full PDF Tools</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <img src="/assets/logo.svg" alt="logo">
+    <div style="font-weight:700;margin-left:8px;color:white">VIP PDF MAKER</div>
+  </header>
+
+  <div class="container">
+    <div class="tool-title">Image to PDF</div>
+    <input type="file" id="imgFile" accept="image/*">
+    <button id="convertImgBtn">Convert</button>
+    <div id="imgResult" class="small"></div>
+  </div>
+
+  <div class="ads-box">Ad Placeholder</div>
+
+  <div class="container">
+    <div class="tool-title">Merge PDF</div>
+    <input type="file" id="mergeFiles" multiple accept="application/pdf">
+    <button id="mergeBtn">Merge</button>
+    <div id="mergeResult" class="small"></div>
+  </div>
+
+  <div class="container">
+    <div class="tool-title">Compress PDF</div>
+    <input type="file" id="compressFile" accept="application/pdf">
+    <button id="compressBtn">Compress</button>
+    <div id="compressResult" class="small"></div>
+  </div>
+
+  <div class="ads-box">Ad Placeholder</div>
+
+  <div class="container">
+    <div class="tool-title">Split PDF</div>
+    <input type="file" id="splitFile" accept="application/pdf">
+    <input type="text" id="splitPages" placeholder="pages (e.g. 1-2,3-5)" style="margin-top:8px;padding:8px;width:100%">
+    <button id="splitBtn">Split</button>
+    <div id="splitResult" class="small"></div>
+  </div>
+
+  <div class="container">
+    <div class="tool-title">Rotate PDF</div>
+    <input type="file" id="rotateFile" accept="application/pdf">
+    <select id="rotateAngle" style="margin-top:8px;padding:8px;width:100%">
+      <option value="90">Rotate 90°</option>
+      <option value="180">Rotate 180°</option>
+      <option value="270">Rotate 270°</option>
+    </select>
+    <button id="rotateBtn">Rotate</button>
+    <div id="rotateResult" class="small"></div>
+  </div>
+
+  <div class="container">
+    <div class="tool-title">Protect / Unlock PDF (Password)</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <div style="flex:1 1 300px">
+        <div class="small">Protect (add password)</div>
+        <input type="file" id="protectFile" accept="application/pdf">
+        <input type="text" id="protectPassword" placeholder="Password to add" style="margin-top:8px;padding:8px;width:100%">
+        <button id="protectBtn">Protect</button>
+        <div id="protectResult" class="small"></div>
+      </div>
+      <div style="flex:1 1 300px">
+        <div class="small">Unlock (remove password)</div>
+        <input type="file" id="unlockFile" accept="application/pdf">
+        <input type="text" id="unlockPassword" placeholder="Current password" style="margin-top:8px;padding:8px;width:100%">
+        <button id="unlockBtn">Unlock</button>
+        <div id="unlockResult" class="small"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">© VIP PDF MAKER</div>
+
+  <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+:root{--bg:#0d1b2a;--accent:#1b6ca8;--muted:#aab6c9}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;background:linear-gradient(180deg,#eef3f8,#f7fbff);color:#0d1b2a}
+header{background:linear-gradient(90deg,var(--bg),#071226);padding:16px;color:#fff;display:flex;align-items:center;gap:12px}
+.logo img{height:40px}
+.container{max-width:980px;margin:20px auto;padding:18px;background:#fff;border-radius:12px;box-shadow:0 8px 30px rgba(13,27,42,0.06)}
+.tool-title{font-size:18px;font-weight:700;color:var(--bg)}
+button{background:linear-gradient(90deg,var(--accent),#114b72);border:none;color:#fff;padding:10px 14px;border-radius:8px;cursor:pointer;font-weight:700}
+.ads-box{height:96px;margin:18px 0;border-radius:10px;background:#f1f5f9;display:flex;align-items:center;justify-content:center;border:2px dashed #cbd5e1}
+.small{font-size:13px;color:#64748b}
+.footer{text-align:center;color:#64748b;padding:12px}
